@@ -31,12 +31,12 @@ const FileUpload = ({ onUploadSuccess }) => {
 
     return (
         <div className="p-6 bg-white rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4">Upload Data CSV</h2>
+            <h2 className="text-xl font-semibold mb-4">Upload Data (CSV or Excel)</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                     <input
                         type="file"
-                        accept=".csv"
+                        accept=".csv,.xlsx,.xls"
                         onChange={handleFileChange}
                         className="block w-full text-sm text-gray-500
                         file:mr-4 file:py-2 file:px-4
